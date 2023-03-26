@@ -22,6 +22,7 @@ public class Calculo_moneda {
 	public void setOpcion(int opcion) {	this.opcion = opcion;	}
 	
 	
+	
 	public double convertir() {
 	
 	        switch (opcion) {

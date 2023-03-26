@@ -8,6 +8,7 @@ import operaciones.Calculo_moneda;
 
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.DefaultComboBoxModel;
 
 import javax.swing.JComboBox;
@@ -30,10 +31,8 @@ public class VentanaMoneda extends JFrame {
     private JComboBox<String> cbConversion;
     
 	public VentanaMoneda() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		iniciarComponentes();
-		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
+		iniciarComponentes();		
 		setTitle("CONVERSOR MONEDAS");
 		setResizable(false);
 		setLocationRelativeTo(null);	}
@@ -62,7 +61,11 @@ public class VentanaMoneda extends JFrame {
 		btnConvierte.setText("Convertir");
         btnConvierte.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-            	btnConvierteAction(e);}});
+            	if (!validarNumero(txtCampNum1.getText().trim())) {
+					JOptionPane.showMessageDialog(rootPane,"Los datos no son Correctos. - Ingrese un numero positivo");
+					txtCampNum1.requestFocus();
+				}else {
+            	btnConvierteAction(e);}}});
 		
 		btnLimpiar = new JButton("Limpiar");
 		btnLimpiar.setBounds(71, 294, 89, 23);
@@ -97,19 +100,17 @@ public class VentanaMoneda extends JFrame {
 		
 		cbConversion = new JComboBox<String>();
         String arreglo[] = new String[] {"Peso Colombiano a Dolar", "Peso Colombiano a Euros", "Peso Colombiano a Libras Esterlinas", "Peso Colombiano a Yen Japonés", "Peso Colombiano a Won sul-coreano", "Dólar a Peso Colombiano", "Euros a Peso Colombiano", "Libras Esterlinas a Peso Colombiano", "Yen Japonés a Peso Colombiano", "Won sul-coreano a Peso Colombiano"};
-		System.out.println(opcion);
 		cbConversion.setModel(new DefaultComboBoxModel(arreglo));
 		cbConversion.setMaximumRowCount(10);
 		cbConversion.setFont(new Font("Trebuchet MS", Font.BOLD | Font.ITALIC, 14));
 		cbConversion.setBounds(61, 62, 281, 35);
 		contentPane.add(cbConversion);
-		
-
 	}
 	
 	private void btnLimpiarAction(ActionEvent e) {	
 	    txtCampNum1.setText("");
 	    txtCampNum2.setText("");
+	    txtCampNum1.requestFocus();
 	}
 	
 	private void btnConvierteAction(ActionEvent e) {
@@ -123,8 +124,13 @@ public class VentanaMoneda extends JFrame {
 	calculo_moneda.setValor(valor);
 	calculo_moneda.setOpcion(opcion);
 	resultado = calculo_moneda.convertir();
-	txtCampNum2.setText(Double.toString(resultado));    
+	txtCampNum2.setText(Double.toString(resultado));   
+	txtCampNum1.requestFocus();
 	
+	}
+	
+	public static boolean validarNumero(String datos) {
+		return datos.matches("[0-9]\\d");
 	}
 
 }

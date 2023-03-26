@@ -20,6 +20,7 @@ public class VentanaPrincipal extends JFrame {
 		InicializarVentanas();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("CONVERSORES");
+		setResizable(false);
 		setLocationRelativeTo(null);	
 	}
 
