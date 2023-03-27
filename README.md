@@ -15,40 +15,26 @@ El presente proyecto es la solución al segundo challenge del curso de Java de l
 
 El reto consistía en usar Java para crear un conversor de dívisas con una interfaz gráfica.
 
-### Demos:
+### Ejemplo del Proyecto:
 
-![pantalla2](https://user-images.githubusercontent.com/122067198/227814328-0bf01ca5-947a-4c7f-bf71-655cb4b3215f.png)
-
-
-![pantalla2](https://user-images.githubusercontent.com/122067198/227814203-c87e9988-f1ed-4bd6-87ea-dec13ba0b97c.png)
-
-#### Reto:
-
-![Conversor de unidades](requerimientos.gif)
+![menu-conversion](https://user-images.githubusercontent.com/122067198/227814451-0483f0d2-8fef-427b-badc-9a48e650ffd4.png)
 
 #### Resultado:
 
-![Conversor de unidades](demo2.gif)
+![pantalla1](https://user-images.githubusercontent.com/122067198/227814834-e19c2ae1-c03e-4daa-8862-9c75feeafa77.png)
 
 
 ### Funcionalidades (Reto)
+
 
 #### Requerimientos de Base:
 
 La aplicación debe cumplir con los siguientes requerimientos:
 
-- Convertir de Dólar a la moneda de tu país:
-- Convertir de la moneda de tu país a Dólar.
-- Convertir de la moneda de tu país a Euros.
-- Convertir de la moneda de tu país a Libras Esterlinas.
-- Convertir de la moneda de tu país a Yen Japonés.
-- Convertir de la moneda de tu país a Won sul-coreano.
+- Convertir de la moneda de tu país al Dólar, Euros, Libras Esterlinas, Yen Japones, Won Sul-Corenano.
 
-- Convertir de Dólar a la moneda de tu país
-- Convertir de Euros a la moneda de tu país
-- Convertir de Libras Esterlinas a la moneda de tu país
-- Convertir de Yen Japonés a la moneda de tu país
-- Convertir de Won sul-coreano a la moneda de tu país
+- Convertir del Dólar, Euros, Libras Esterlinas, Yen Japones, Won Sul-Corenano a la moneda de tu país.
+
 
 #### Requerimientos Extras:
 
@@ -57,11 +43,26 @@ La aplicación debe cumplir con los siguientes requerimientos:
 
 ### Funcionalidades (Resultado)
 
-En adición a los requerimientos propuestos, diseñé una interfaz gráfica completamente diferente y expandí las funcionalidades del convertidor. Mi solución:
+Basandome en las propuestas planteadas elabore una interfaz gráfica diferente. La solución que plantee fue:
 
-- Reacciona de forma automática a las interacciones del usuario y actualiza las conversiones cada que se cambia el valor o el tipo de conversión.
-- Convierte de ida y vuelta entre unidades, sin tener que cambiar la "dirección" de la conversión.
-- No solo convierte entre monedas, sino también entre unidades de:
+- Que el usuario pueda seleccionar con un click de boton el conversor que desea utilizar.
+
+![pantalla1](https://user-images.githubusercontent.com/122067198/227815282-2de7a1cd-2e05-4f9c-90bf-28237add21ea.png)
+
+- Una vez dentro por ejemplo si selecciona el conversor de divisas, se le mostrara la siguiente ventana.
+
+![pantalla2](https://user-images.githubusercontent.com/122067198/227815605-4613c0d1-7cd5-4018-a491-acb77a97a6a2.png)
+
+
+![pantalla4](https://user-images.githubusercontent.com/122067198/227815881-711ede35-8a12-4b36-9bb7-f30d4858fb35.png)
+
+- Debe seleccionar el tipo de divisa que desea convertir y digitar la cantidad, la interafaz valida que el valor digitado sea numeros, si el usuario por error digita letras o numeros negativos le saldra una alerta de que digite algo errado.
+
+
+![pantalla5](https://user-images.githubusercontent.com/122067198/227815939-da37f89d-9b8a-47df-b595-21c9b5375ea1.png)
+
+
+
   - Longitud,
   - Masa,
   - Tiempo
