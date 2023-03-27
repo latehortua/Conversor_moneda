@@ -17,6 +17,11 @@ El reto consistía en usar Java para crear un conversor de dívisas con una inte
 
 ### Demos:
 
+![pantalla2](https://user-images.githubusercontent.com/122067198/227814328-0bf01ca5-947a-4c7f-bf71-655cb4b3215f.png)
+
+
+![pantalla2](https://user-images.githubusercontent.com/122067198/227814203-c87e9988-f1ed-4bd6-87ea-dec13ba0b97c.png)
+
 #### Reto:
 
 ![Conversor de unidades](requerimientos.gif)
@@ -24,6 +29,7 @@ El reto consistía en usar Java para crear un conversor de dívisas con una inte
 #### Resultado:
 
 ![Conversor de unidades](demo2.gif)
+
 
 ### Funcionalidades (Reto)
 
