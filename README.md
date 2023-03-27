@@ -78,4 +78,4 @@ Para el desarrollo, utilicé:
 
 ## Contacto
 
-Si quieres compartir alguna observación, comentario, consulta o sugerencia sobre el proyecto o sobre programación, no dudes en escribirme via [LinkedIn](https://www.linkedin.com/in/leonardo-atehortua-castro-63285a58/).
+Si quieres compartir alguna observación, comentario, consulta o sugerencia sobre el proyecto o sobre programación, no dudes en escribirme via [LinkedIn](https://www.linkedin.com/in/leonardo-atehortua).
